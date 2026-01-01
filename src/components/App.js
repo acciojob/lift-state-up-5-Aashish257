@@ -9,6 +9,7 @@ const App = () => {
 
   return (
     <>
+    <h1>Parent Component</h1>
       {isLoggedIn ? (
         <h2>You are logged in</h2>
       ) : (
