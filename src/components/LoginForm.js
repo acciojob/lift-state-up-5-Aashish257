@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const LoginForm = ({ setIsLoggedIn }) => {
+const LoginForm = ({ isLoggedIn, setIsLoggedIn }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -9,12 +9,12 @@ const LoginForm = ({ setIsLoggedIn }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label for="email">
-        Username: <input typeof="email" name="email" />
+      <label htmlFor="email">
+        Username: <input type="email" id="email" name="email" />
       </label>
 
-      <label for="password">
-        Password: <input typeof="password" name="password" />
+      <label htmlFor="password">
+        Password: <input type="password" id="password" name="password" />
       </label>
 
       <button type="submit">Login</button>

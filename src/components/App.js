@@ -6,17 +6,16 @@ import LoginForm from './LoginForm';
 const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-
   return (
     <>
-    <h1>Parent Component</h1>
+      <h1>Parent Component</h1>
       {isLoggedIn ? (
         <h2>You are logged in</h2>
       ) : (
-        <LoginForm setIsLoggedIn={setIsLoggedIn} />
+        <LoginForm isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />
       )}
     </>
-  )
-}
+  );
+};
 
 export default App
